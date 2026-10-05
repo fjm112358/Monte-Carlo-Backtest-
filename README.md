@@ -1,14 +1,21 @@
 # Monte-Carlo-Backtest
 
 # Overview 
-Monte Carlo simulation is a computational method that uses repeated random sampling to model a range of possible outcomes. In this project, Monte Carlo simulation is used to generate potential future AAPL stock prices based on historical hourly returns and volatility.
+Monte Carlo simulation is a computational method that uses repeated random sampling to model a range of possible outcomes. In this project, Monte Carlo simulation is used to generate potential future AAPL stock prices based on historical hourly returns and volatility. The project historical AAPL price data using yfinance and calculates hourly returns using pandas and NumPy. The historical mean return and standard deviation are then used as inputs for the simulation. Thousands of possible future price paths are generated, allowing the distribution of potential future prices to be analysed.
 
-The project first downloads historical AAPL price data using yfinance and calculates hourly returns using pandas and NumPy. The historical mean return and standard deviation are then used as inputs for the simulation. Thousands of possible future price paths are generated, allowing the distribution of potential future prices to be analysed.
+![Monte Carlo Simulation](MCSbroomstick.png)
 
-The simulation uses Geometric Brownian Motion (GBM) to model the evolution of the stock price:
+To better understand the Simulation we can use a normal distribution. The bell curve shows that most simulated outcomes are close to the expected outcome as well as showing; 
 
-![Geometric Brownian Motion](results/monte_carlo_paths.png)
+*Increasingly extreme outcomes becoming less likely, 
+*Most simulations produce moderate price movements 
+*Fewer simulations produce large positive or negative movements
 
+![Bellcurve](Bellcurve.png)
+
+This is useful because the purpose of Monte Carlo simulation is not to predict one exact future price, but to model a range of plausible outcomes and estimate their probabilities.
+
+## Results 
 
 
 
