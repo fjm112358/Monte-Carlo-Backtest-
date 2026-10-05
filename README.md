@@ -9,5 +9,10 @@ This project uses the Monte Carlo simulation to model future stock pricing and e
 -yfinance
 
 # How-to-Use
-Can either paste the raw code from the repository and download the imported libraries 
+Can either paste or download the raw code from the repository and download the imported libraries 
+
+pip install dash pandas plotly openpyxl
+Then run:
+
+python backtest(mcs).raw.y
 
