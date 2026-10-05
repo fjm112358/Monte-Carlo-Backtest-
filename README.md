@@ -14,9 +14,9 @@ Can either paste or download the raw code from the repository and download the i
 '''bash
 pip install pandas numpy matplotlib yfinance openpyxl
 Then run:
-'''bash 
+'''
 
 '''bash
 python backtest(mcs).raw.y
-'''bash
+'''
 
