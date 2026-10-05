@@ -1,7 +1,14 @@
 # Monte-Carlo-Backtest
 
+# Overview 
+Monte Carlo simulation is a computational method that uses repeated random sampling to model a range of possible outcomes. In this project, Monte Carlo simulation is used to generate potential future AAPL stock prices based on historical hourly returns and volatility.
 
-This project uses the Monte Carlo simulation to model future stock pricing and estimate probabilities  of price increases or decreases. The model then uses signals that are backtested with previous data. 
+The project first downloads historical AAPL price data using yfinance and calculates hourly returns using pandas and NumPy. The historical mean return and standard deviation are then used as inputs for the simulation. Thousands of possible future price paths are generated, allowing the distribution of potential future prices to be analysed.
+
+The simulation uses Geometric Brownian Motion (GBM) to model the evolution of the stock price:
+
+![Geometric Brownian Motion](results/monte_carlo_paths.png)
+
 
 
 
@@ -23,6 +30,6 @@ Then run:
 python backtest(mcs).raw.y
 ```
 this allows you to play with the code, use different numbers, plots or data as well access to the plots.
-[!WARNING]
+
 > **Large simulations take longer run.** Increasing the number of simulations, historical data, or holding periods will increase the processing time so if your data i'snt loading then give it time to load.
 
